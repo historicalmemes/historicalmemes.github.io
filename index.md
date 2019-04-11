@@ -33,10 +33,9 @@ SPARQL (pronounced "sparkle", short for SPARQL Protocol and RDF Query Language) 
 `?and_one_more`  
 
 **Comments**
-
 ```
-\# Comments start with a '#'  
-\# continue to the end of the line
+# Comments start with a '#'  
+# continue to the end of the line
 ```
 
 **Triple patterns**
