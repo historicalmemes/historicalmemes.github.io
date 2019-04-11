@@ -13,38 +13,42 @@ SPARQL (pronounced "sparkle", short for SPARQL Protocol and RDF Query Language) 
 **Literals**
 
 *Plain literals*  
-"a plain literal" 
+`"a plain literal"`
 
 *Plain literal with language tag*  
-"bonjour"@fr  
+`"bonjour"@fr`
 
 *Typed literal*  
-"13"^^xsd:integer 
+`"13"^^xsd:integer`
 
 *Shortcuts*  
-true -> "true"^^xsd:boolean  
-3 -> "3"^^xsd:integer  
-4.2 -> "4.2"^^xsd:decimal 
+`true` -> `"true"^^xsd:boolean`  
+`3` -> `"3"^^xsd:integer`  
+`4.2` -> `"4.2"^^xsd:decimal`  
 
 **Variables**
 
-?var1, ?anotherVar, ?and_one_more
+`?var1`  
+`?anotherVar`  
+`?and_one_more`  
 
 **Comments**
 
+```
 \# Comments start with a '#'  
 \# continue to the end of the line
+```
 
 **Triple patterns**
 
 *Match an exact RDF triple*  
-ex:myWidget ex:partNumber "XY24Z1" .  
+`ex:myWidget ex:partNumber "XY24Z1" .`
 
 *Match one variable*  
-?person foaf:name "Lee Feigenbaum" .  
+`?person foaf:name "Lee Feigenbaum" .`
 
 *Match multiple variables*  
-conf:SemTech2009 ?property ?value .  
+`conf:SemTech2009 ?property ?value .`
 
 ## Query format
 A SPARQL query comprises, in order, of:
