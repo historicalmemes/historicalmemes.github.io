@@ -57,21 +57,7 @@ A SPARQL query comprises, in order, of:
 * The **query pattern** specifying what to query for in the underlying dataset
 * **Query modifiers** slicing, ordering, and otherwise rearranging results
 
-```
-# prefix declarations
-PREFIX foo: <http://example.com/resources/>
-...
-# dataset definition
-FROM ...
-# result clause
-SELECT ...
-# query pattern
-WHERE {
-    ...
-}
-# query modifiers
-ORDER BY ...
-```
+![](anatomy_of_a_query.png)
 
 ## Example query on the graph http://www.w3.org/People/Berners-Lee/card
 This information is in the FOAF format which is a way to describe machine readable ontologies (relationships between things) using RDF.
