@@ -42,7 +42,8 @@ Triple patterns match two nodes and the directed edge between them ( node1 --> n
 The format of a triple is:  
 `[literal/variable for node1] [literal/variable for edge] [literal/variable for node2]`  
 You can put a dot at the end of the line to seperate triples.  
-Examples:  
+
+**Examples:**  
 
 *Match an exact RDF triple*  
 `ex:myWidget ex:partNumber "XY24Z1" .`
