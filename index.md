@@ -72,36 +72,4 @@ A SPARQL query comprises, in order, of:
 ![](anatomy_of_a_query.png)
 (source http://www.iro.umontreal.ca/~lapalme/ift6281/sparql-1_1-cheat-sheet.pdf)
 
-## Example query on the graph http://www.w3.org/People/Berners-Lee/card
-This information is in the FOAF format which is a way to describe machine readable ontologies (relationships between things) using RDF.
-
-```
-PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
-SELECT ?name
-WHERE {
-    ?person foaf:name ?name .
-}
-```
-
-* SPAQRL **variables** start with an ? and can match and node (resource or literal) in the RDF dataset.
-* **Triple patterns** are just like triples, except that any of the parts of a triple can be replace with a variable.
-* The **SELECT** result clause returns a table of variables and values that satisfy the query.
-
-### Results
-&nbsp;&nbsp;&nbsp;name  
-"mc schraefel"  
-"John Klensin"  
-"Libby Miller"  
-"Henrik Nielsen"  
-"John Markoff"  
-"Edd Dumbill"  
-"Nicholas Gibbins"  
-"Daniel Krech"  
-"Coralie Mercier"  
-"Norman Walsh"  
-"Les Carr"  
-"Shinnyih Huang"  
-"Philippe Le Hégaret"  
-"Oshani Seneviratne"  
-"Joe Lambda"  
-…
+# Example DBpedia queries
