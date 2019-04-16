@@ -2,7 +2,10 @@
 DBpedia is a project aiming to extract structured content from the information in Wikipedia. DBpedia allows users to semantically query relationships and properties of Wikipedia resources, including links to other related datasets, using the SPARQL query language.
 
 # SPARQL
-SPARQL (pronounced "sparkle", short for SPARQL Protocol and RDF Query Language) is a query language used to retrieve and manipulate data stored in RDF ([Resource Description Framework]( https://en.wikipedia.org/wiki/Resource_Description_Framework)) format.
+SPARQL (pronounced "sparkle", short for SPARQL Protocol and RDF Query Language) is a query language used to retrieve and manipulate data stored in RDF ([Resource Description Framework]( https://en.wikipedia.org/wiki/Resource_Description_Framework)) format. RDF databases are different than typical "spreadsheet" type databases as they are in the form of a graph rather than a table. This graph consists of nodes representing objects with directed edges representing relationships between them. The term _triple_ is used to describe any two nodes with an edge connecting them.  
+
+## Example RDF Graph with 9 triples
+![](example_rdf_graph.png)
 
 ## Specifics
 **URIs**    
