@@ -82,4 +82,13 @@ A SPARQL query comprises, in order, of:
 (source http://www.iro.umontreal.ca/~lapalme/ift6281/sparql-1_1-cheat-sheet.pdf)
 
 # Example DBpedia queries
-You can query DBpedia using the website [http://dbpedia.org/snorql/](http://dbpedia.org/snorql/).  
+You can run these queries against DBpedia using the website [http://dbpedia.org/snorql/](http://dbpedia.org/snorql/)  
+
+### Get all the information from Kanye West's page
+```
+PREFIX db: <http://dbpedia.org/resource/>
+
+SELECT * where {
+  db:Kanye_West ?rel ?obj .
+}
+``` 
