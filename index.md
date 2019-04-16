@@ -6,8 +6,7 @@ SPARQL (pronounced "sparkle", short for SPARQL Protocol and RDF Query Language) 
 
 ## Specifics
 **URIs**    
-
-*Write full URIs*  
+ 
 <http://this.is.a/full/URI/written#out>  
 
 **Literals**
