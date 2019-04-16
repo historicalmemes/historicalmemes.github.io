@@ -92,3 +92,10 @@ SELECT * where {
   db:Kanye_West ?rel ?obj .
 }
 ``` 
+
+### Find what awards Barack Obama has won
+```
+SELECT ?award where {
+  <http://dbpedia.org/resource/Barack_Obama> <http://dbpedia.org/ontology/award> ?award .
+}
+```
