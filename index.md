@@ -14,7 +14,16 @@ SPARQL (pronounced "sparkle", short for SPARQL Protocol and RDF Query Language) 
 ## Specifics
 **URIs**    
  
-<http://this.is.a/full/URI/written#out>  
+*Full URI written out*  
+`<http://this.is.a/full/URI/written#out>`  
+
+*URI shortened using PREFIX*  
+At the top of your query put:  
+`PREFIX foo: <http://this.is.a/URI/prefix#>`  
+Later on you can type:  
+`foo:bar`  
+And it will translate to:  
+`http://this.is.a/URI/prefix#bar`  
 
 **Literals**
 
