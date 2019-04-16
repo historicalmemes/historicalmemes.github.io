@@ -6,6 +6,7 @@ RDF ([Resource Description Framework]( https://en.wikipedia.org/wiki/Resource_De
 
 ## Example RDF Graph with 9 triples
 ![](example_rdf_graph.png)
+(source https://www.researchgate.net/figure/Example-RDF-graph-containing-9-triples-describing-the-city-of-Leipzig-and-its-mayor_fig2_221510762)
 
 # SPARQL
 SPARQL (pronounced "sparkle", short for SPARQL Protocol and RDF Query Language) is a query language used to retrieve and manipulate data stored in RDF format.
@@ -69,6 +70,7 @@ A SPARQL query comprises, in order, of:
 * **Query modifiers** slicing, ordering, and otherwise rearranging results
 
 ![](anatomy_of_a_query.png)
+(source http://www.iro.umontreal.ca/~lapalme/ift6281/sparql-1_1-cheat-sheet.pdf)
 
 ## Example query on the graph http://www.w3.org/People/Berners-Lee/card
 This information is in the FOAF format which is a way to describe machine readable ontologies (relationships between things) using RDF.
