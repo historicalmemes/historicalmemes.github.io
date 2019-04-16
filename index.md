@@ -37,7 +37,10 @@ SPARQL (pronounced "sparkle", short for SPARQL Protocol and RDF Query Language) 
 # continue to the end of the line
 ```
 
-**Triple patterns**
+**Triple patterns**  
+Triple patterns match two nodes and the directed edge between them ( node1 --> node2 )  
+The format of a triple is:
+`literal/variable for node1 literal/variable for edge literal/variable for node2 dot to end the triple`  
 
 *Match an exact RDF triple*  
 `ex:myWidget ex:partNumber "XY24Z1" .`
