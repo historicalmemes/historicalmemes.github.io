@@ -84,7 +84,7 @@ A SPARQL query comprises, in order, of:
 # Example DBpedia queries
 You can run these queries against DBpedia using the website [http://dbpedia.org/snorql/](http://dbpedia.org/snorql/)  
 
-### Get all the information from Kanye West's page
+### Get an overview of Kanye West
 ```
 PREFIX db: <http://dbpedia.org/resource/>
 
