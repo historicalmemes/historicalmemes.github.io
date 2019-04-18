@@ -81,6 +81,15 @@ A SPARQL query comprises, in order, of:
 ![](anatomy_of_a_query.png)
 (source http://www.iro.umontreal.ca/~lapalme/ift6281/sparql-1_1-cheat-sheet.pdf)
 
+## Important Modifiers
+### Filter
+A boolean condition to reduce the query result
+Functions and operators in SPARQL:
+* Logical - ||, &&, !
+* Comparison - <, >, = !=, IN, NOT IN
+* Other - str, lang, datatype, isURI, isBlank, isLiteral, isNumeric, bound, sameTerm, langMatches, regex, REPLACE
+Many other functions with SPARQL 1.1
+
 # Example DBpedia queries
 You can run these queries against DBpedia using the website [http://dbpedia.org/snorql/](http://dbpedia.org/snorql/)  
 
