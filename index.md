@@ -54,12 +54,12 @@ And it will translate to:
 ```
 
 **Triple patterns**  
-Triple patterns match two nodes (objects) and the directed edge (relationship) between them ( node1 --> node2 )  
+Triple patterns match a node (the subject) and the directed edge (the predicate/relationship) to another node (the object)
 The format of a triple is:  
 `[literal/variable for node1] [literal/variable for edge] [literal/variable for node2]`  
 You can put a dot at the end of the line to seperate triples.  
 
-**Examples**  
+**Example triple queries**  
 
 *Match an exact RDF triple*  
 `ex:myWidget ex:partNumber "XY24Z1" .`
