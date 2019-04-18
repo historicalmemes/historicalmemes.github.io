@@ -83,13 +83,24 @@ A SPARQL query comprises, in order, of:
 
 ## Important Modifiers
 ### Filter
-A boolean condition to reduce the query result
+A boolean condition to reduce the query result   
 Functions and operators in SPARQL:
 * Logical - \|\|, &&, !
 * Comparison - <, >, = !=, IN, NOT IN
 * Other - str, lang, datatype, isURI, isBlank, isLiteral, isNumeric, bound, sameTerm, langMatches, regex, REPLACE
 
 Many other functions with SPARQL 1.1
+
+**Example - Find all actors born after 1975**
+```
+SELECT ?person ?birth_year
+WHERE {
+  ?person ?rel <http://umbel.org/umbel/rc/Actor> .
+  ?person <http://dbpedia.org/ontology/birthYear> ?birth_year .
+  FILTER (xsd:integer(xsd:string(?birth_year)) > 1975)
+}
+```
+In this example the first triple gets anyone connected to the concept of actor. This is joined to the second triple which gets the birth years of the people returned from the first triple. Finally the information is filtered out with ?birth_year being cast to integer as it is of type xsd:year, so it can be compared.
 
 # Example DBpedia queries
 You can run these queries against DBpedia using the website [http://dbpedia.org/snorql/](http://dbpedia.org/snorql/)  
@@ -98,7 +109,8 @@ You can run these queries against DBpedia using the website [http://dbpedia.org/
 ```
 PREFIX db: <http://dbpedia.org/resource/>
 
-SELECT * where {
+SELECT * 
+WHERE {
   db:Kanye_West ?rel ?obj .
 }
 ``` 
@@ -107,7 +119,8 @@ All triples starting at Kanye West.
 
 ### Find what awards Barack Obama has won
 ```
-SELECT ?award where {
+SELECT ?award 
+WHERE {
   <http://dbpedia.org/resource/Barack_Obama> <http://dbpedia.org/ontology/award> ?award .
 }
 ```
@@ -116,7 +129,8 @@ Nobel_Peace_Prize
 
 ### Find what US presidents graduated from Harvard University
 ```
-SELECT ?person where {
+SELECT ?person 
+WHERE {
   ?person ?r1 <http://dbpedia.org/class/yago/WikicatPresidentsOfTheUnitedStates> . 
   ?alumn ?r2 <http://dbpedia.org/class/yago/WikicatHarvardUniversityAlumni> .
   FILTER (?person = ?alumn)
