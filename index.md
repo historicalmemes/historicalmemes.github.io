@@ -85,7 +85,7 @@ A SPARQL query comprises, in order, of:
 ### Filter
 A boolean condition to reduce the query result
 Functions and operators in SPARQL:
-* Logical - ||, &&, !
+* Logical - \|\|, &&, !
 * Comparison - <, >, = !=, IN, NOT IN
 * Other - str, lang, datatype, isURI, isBlank, isLiteral, isNumeric, bound, sameTerm, langMatches, regex, REPLACE
 
