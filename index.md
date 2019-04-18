@@ -88,6 +88,7 @@ Functions and operators in SPARQL:
 * Logical - ||, &&, !
 * Comparison - <, >, = !=, IN, NOT IN
 * Other - str, lang, datatype, isURI, isBlank, isLiteral, isNumeric, bound, sameTerm, langMatches, regex, REPLACE
+
 Many other functions with SPARQL 1.1
 
 # Example DBpedia queries
