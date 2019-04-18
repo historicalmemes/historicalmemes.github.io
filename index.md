@@ -113,3 +113,12 @@ SELECT ?award where {
 ```
 Results:  
 Nobel_Peace_Prize  
+
+### Find what US presidents graduated from Harvard University
+```
+SELECT ?person where {
+  ?person ?r1 <http://dbpedia.org/class/yago/WikicatPresidentsOfTheUnitedStates> . 
+  ?alumn ?r2 <http://dbpedia.org/class/yago/WikicatHarvardUniversityAlumni> .
+  FILTER (?person = ?alumn)
+}
+```
