@@ -136,3 +136,12 @@ WHERE {
   FILTER (?person = ?alumn)
 }
 ```
+Results:  
+Theodore_Roosevelt  
+Franklin_D._Roosevelt  
+John_Quincy_Adams  
+Barack_Obama  
+Rutherford_B._Hayes  
+John_Adams  
+George_W._Bush  
+John_F._Kennedy   
